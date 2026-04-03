@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ .Title }}</title>
+
+  {{ $styles := resources.Get "css/main.css" | postCSS }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-background text-foreground antialiased">
+  {{ block "main" . }}{{ end }}
+</body>
+</html>

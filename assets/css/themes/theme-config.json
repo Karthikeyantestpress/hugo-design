@@ -1,0 +1,7 @@
+{
+  "name": "default",
+  "hue": 220,
+  "style": "clean",
+  "useCustomDarkGray": true,
+  "tailwindGray": "slate"
+}
